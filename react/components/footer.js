@@ -30,10 +30,10 @@ const footer = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex mx-auto text-center">
+                    <div className="flex justify-center lg:justify-end w-50 lg:w-1/3 mx-auto text-center">
                         <span className="block">
-                            <h1 className="text-3xl text-right sm:text-right">
-                                <strong>${ props.price }</strong>
+                            <h1 className="text-3xl text-right sm:text-right font-bold">
+                                ${ props.price }
                             </h1>
                             <p className="hidden sm:block text-gray-500">
                                     Need Financing? &nbsp;

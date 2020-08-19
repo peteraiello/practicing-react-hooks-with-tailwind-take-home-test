@@ -5,3 +5,5 @@ I recently read about the [hiring process](https://blog.tailwindcss.com/from-900
 Part of the process included a [Take Home Test](https://github.com/adamwathan/tailwind-take-home-project).
 
 I decided to give it a go in order to practice some of what I've learned using React Hooks.
+
+Check out the live URL [here:] (https://tailwind-take-home-test-react.vercel.app/)

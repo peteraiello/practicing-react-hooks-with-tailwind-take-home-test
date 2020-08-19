@@ -4,13 +4,13 @@ const ThumbnailImages = (props) => {
 
     let isActive = props.activeThumb;
 
-    let className="border-solid border-2 rounded-lg py-2 px-4 mr-2";
+    let className="border-solid rounded-lg py-2 px-4 mr-2 hover:border-gray-700";
 
     // set default border
-    let activeClass = "border-gray-300";
+    let activeClass = "border-gray-200 border";
 
     function thumbnailSelect(index) {
-        return (isActive === index ? activeClass = 'border-gray-800' : activeClass = 'border-gray-300');
+        return (isActive === index ? activeClass = 'border-gray-700 border-2' : activeClass = 'border-gray-200 border');
     }
  
     return (
@@ -18,12 +18,11 @@ const ThumbnailImages = (props) => {
             <ul className="flex">
                 {imageArray.map((image, index) => (
                     <li key={index}>
-
-                        <button 
-                            label={ thumbnailSelect(index) } 
-                            onClick={ () => props.click(index) } 
-                            className={className + " " + activeClass
-                        }>
+                            <button 
+                                label={ thumbnailSelect(index) } 
+                                onClick={ () => props.click(index) } 
+                                className={className + " " + activeClass
+                            }>
                             <img src={ "img/" + image + ".jpg" } />
                         </button>
                     
