@@ -12,7 +12,7 @@ export default function Home() {
   let price = 1799;
   
   const [ampPrice, setPrice] = useState({
-      price: price,
+      price: numberWithCommas(price),
   });
 
   const [active1, setActive1] = useState({
@@ -45,8 +45,12 @@ export default function Home() {
 
   let totalGroup3 = costState3.cost;
 
+  function numberWithCommas(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
   function updatePrice() {
-    setPrice({ price: price + totalGroup1 + totalGroup2 + totalGroup3 })  
+    setPrice({ price: numberWithCommas(price + totalGroup1 + totalGroup2 + totalGroup3) }) 
   }
 
   const clickHandler1 = (id, cost) => {
@@ -90,7 +94,6 @@ export default function Home() {
 
   return (
     <div>
-
       <Head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
