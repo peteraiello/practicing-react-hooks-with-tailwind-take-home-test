@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MainImage from './mainImage';
+import MainImage from './MainImage';
 import ThumbnailImages from './ThumbnailImages';
 
 function ProductGallery() {

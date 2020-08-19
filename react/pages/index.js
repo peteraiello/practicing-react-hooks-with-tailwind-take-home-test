@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React, { useState } from 'react';
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 import ProductHeader from '../components/ProductHeader'
 import ProductGallery from '../components/ProductGallery'
 import ProductDescription from '../components/ProductDescription'
