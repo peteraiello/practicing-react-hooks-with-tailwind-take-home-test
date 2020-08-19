@@ -118,9 +118,9 @@ export default function Home() {
             <div className="container mb-10">
               <section className="form-group">
                 <h3 className="text-2xl">Form Factor</h3>
-                  <ul className="flex flex-col lg:flex-row gap-4 my-4">
+                  <ul className="lg:flex flex-col lg:flex-row gap-4">
                       { buttonGroup1.map((buttons1, index) => 
-                      <li key={index}>
+                      <li key={index} className="my-4">
                           <FormOption id={ buttons1.id } title={buttons1.title} content={buttons1.content} cost={ buttons1.cost } label={ index} activeButton={ active1.active } click={ clickHandler1 }
                           ></FormOption>
                       </li>
