@@ -25,7 +25,6 @@ const ThumbnailImages = (props) => {
                             }>
                             <img src={ "img/" + image + ".jpg" } />
                         </button>
-                    
                     </li>
                 ))}
             </ul>

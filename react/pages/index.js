@@ -15,15 +15,13 @@ export default function Home() {
       price: numberWithCommas(price),
   });
 
+  /* button group 1 */  
+  const buttonGroup1 = [
+    { id: 0, title: 'Profiler Head', content: 'Compact amplifier head, perfect for a speaker cabinet or desk.', cost: 0 },
+    { id: 1, title: 'Profiler Rack', content: '3U rack mount version of the classic profiling amplifier', cost: 0 },
+  ];
+
   const [active1, setActive1] = useState({
-    active: 0
-  })
-
-  const [active2, setActive2] = useState({
-    active: 0
-  })
-
-  const [active3, setActive3] = useState({
     active: 0
   })
 
@@ -33,26 +31,6 @@ export default function Home() {
 
   let totalGroup1 = costState1.cost;
 
-  const [costState2, setCost2] = useState({
-    cost: 0
-  });
-
-  let totalGroup2 = costState2.cost;
-
-  const [costState3, setCost3] = useState({
-    cost: 0
-  });
-
-  let totalGroup3 = costState3.cost;
-
-  function numberWithCommas(num) {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
-
-  function updatePrice() {
-    setPrice({ price: numberWithCommas(price + totalGroup1 + totalGroup2 + totalGroup3) }) 
-  }
-
   const clickHandler1 = (id, cost) => {
     setActive1({ active: id })
     setCost1({ cost: cost })
@@ -60,6 +38,22 @@ export default function Home() {
     updatePrice();
     event.preventDefault();
   }
+
+  /* button group 2 */
+  const buttonGroup2 = [
+    { id: 0, title: 'None', content: 'Use in the studio or with your own power amp.', cost: 0 },
+    { id: 1, title: 'Powered', content: 'Built-in 600W solid state power amp.', cost: 449 },
+  ];
+
+  const [active2, setActive2] = useState({
+    active: 0
+  })
+
+  const [costState2, setCost2] = useState({
+    cost: 0
+  });
+
+  let totalGroup2 = costState2.cost;
 
   const clickHandler2 = (id, cost) => {
     setActive2({ active: id })
@@ -69,6 +63,22 @@ export default function Home() {
     event.preventDefault();
   }
 
+  /* button group 3 */
+  const buttonGroup3 = [
+    { id: 0, title: 'None', content: ' ', cost: 0 },
+    { id: 1, title: 'Profiler Remote Foot Controller', content: ' ', cost: 449 },
+  ];
+
+  const [active3, setActive3] = useState({
+    active: 0
+  })
+
+  const [costState3, setCost3] = useState({
+    cost: 0
+  });
+
+  let totalGroup3 = costState3.cost;
+
   const clickHandler3 = (id, cost) => {
     setActive3({ active: id })
     setCost3({ cost: cost })
@@ -77,20 +87,14 @@ export default function Home() {
     event.preventDefault();
   }
 
-  const buttonGroup1 = [
-    { id: 0, title: 'Profiler Head', content: 'Compact amplifier head, perfect for a speaker cabinet or desk.', cost: 0 },
-    { id: 1, title: 'Profiler Rack', content: '3U rackmount version of the classic profiling amplifier', cost: 0 },
-  ];
+  /* format price */
+  function numberWithCommas(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
-  const buttonGroup2 = [
-    { id: 0, title: 'None', content: 'Use in the studio or with your own power amp.', cost: 0 },
-    { id: 1, title: 'Powered', content: 'Built-in 600W solid state power amp.', cost: 449 },
-  ];
-
-  const buttonGroup3 = [
-    { id: 0, title: 'None', content: ' ', cost: 0 },
-    { id: 1, title: 'Profiler Remote Foot Controller', content: ' ', cost: 449 },
-  ];
+  function updatePrice() {
+    setPrice({ price: numberWithCommas(price + totalGroup1 + totalGroup2 + totalGroup3) }) 
+  }
 
   return (
     <div>

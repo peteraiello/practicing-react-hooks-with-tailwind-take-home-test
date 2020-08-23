@@ -17,7 +17,7 @@ const formSelect = (props) => {
                     <span className="text-gray-500">{ props.content }</span>
                 </p>
                 <p>
-                    <span className="text-gray-900 float-righ text-sm"> { ( props.cost != 0 ?  "+ $" + props.cost : "" ) }</span>
+                    <span className="text-gray-900 float-right text-sm"> { ( props.cost != 0 ?  "+ $" + props.cost : "" ) }</span>
                 </p>
             </span>
         </button>
