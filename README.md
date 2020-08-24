@@ -6,4 +6,4 @@ Part of the process included a Take Home Test.
 
 I had an attempt at it to practice using React Hooks.
 
-Article [here:](https://medium.com/@peter_aiello/practicing-react-hooks-using-the-tailwindcss-ui-take-home-test-89ce27ef34c9)
+Article [here](https://medium.com/@peter_aiello/practicing-react-hooks-using-the-tailwindcss-ui-take-home-test-89ce27ef34c9)
