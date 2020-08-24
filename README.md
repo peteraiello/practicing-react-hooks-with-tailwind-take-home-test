@@ -2,7 +2,7 @@
 
 I recently read about the [hiring process](https://blog.tailwindcss.com/from-900-to-1-how-we-hired-robin-malfait) for [TailwindCSS](https://tailwindcss.com). Part of the process included a [take-home test](https://github.com/adamwathan/tailwind-take-home-project) for candidates to complete over the space of 2 weeks. 
 
-Board of building to-do apps and with a growing appreciation of Tailwinds class-based system, that allows you to style components without using any custom CSS, I decided to give it a try to practice some of what I've been learning with **React Hooks**. 
+Bored of building to-do apps and with a growing appreciation of Tailwinds class-based system, that allows you to style components without using any custom CSS, I decided to give it a try to practice some of what I've been learning with **React Hooks**. 
 
 However, in the article below, I mostly demonstrate how React Hooks can be used to manipulate 'state' and implement the interactive functionality of the program (including styling changes).
 
