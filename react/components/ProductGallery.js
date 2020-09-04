@@ -23,11 +23,9 @@ function ProductGallery() {
 
     return (
         <div className="relative">
-            <div className="relative lg:fixed lg:w-612px lg:pr-32 xl:pr-0">
-            <MainImage image={ featuredImage.image }/>
+             <MainImage image={ featuredImage.image }/>
             <ThumbnailImages images={ imageArray } click={ clickHandler }  activeThumb={ active.active }/>
-            </div>
-        </div>
+         </div>
     )
 }
 
