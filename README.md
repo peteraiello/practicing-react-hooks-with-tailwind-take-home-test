@@ -2,7 +2,7 @@
 
 I recently read about the hiring process for [TailwindCSS](https://blog.tailwindcss.com/from-900-to-1-how-we-hired-robin-malfait).
 
-Part of the process included a Take Home Test.
+Part of the process included a take home test.
 
 I had an attempt at it to practice using React Hooks.
 
