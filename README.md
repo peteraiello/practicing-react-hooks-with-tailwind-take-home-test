@@ -1,9 +1,6 @@
 # Practicing React Hooks with the Tailwind UI Take-Home Test
 
-I recently read about the hiring process for [TailwindCSS](https://blog.tailwindcss.com/from-900-to-1-how-we-hired-robin-malfait).
+Repo for my attempt at building the [Tailwind CSS take home test](https://github.com/adamwathan/tailwind-take-home-project).
 
-Part of the process included a take home test.
+I basically used the test as a little project to experiment with Tailwind and also practice React Hooks. I also wrote a little [article](https://medium.com/@peter_aiello/practicing-react-hooks-using-the-tailwindcss-ui-take-home-test-89ce27ef34c9) on my experience using React. 
 
-I had an attempt at it to practice using React Hooks.
-
-Article [here](https://medium.com/@peter_aiello/practicing-react-hooks-using-the-tailwindcss-ui-take-home-test-89ce27ef34c9)
